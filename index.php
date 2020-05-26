@@ -38,7 +38,7 @@ $text = $lines[array_rand($lines)];
 		</style>
 		<script>
 			var answer = window.prompt('Tapez "GENOU" pour continuer');
-			if (answer.toLowerCase == 'prout') {
+			if (answer.toLowerCase() == 'prout') {
 				alert('VOUS ÊTES INTOLÉRANT⋅E AU LACTOSE, MISTER BOND 🍸');
 			}
 		</script>
