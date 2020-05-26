@@ -18,6 +18,7 @@ $text = $lines[array_rand($lines)];
  				-moz-background-size: cover;
  				-o-background-size: cover;
   				background-size: cover;
+				cursor: url(hand.cur), pointer;
 			}
 			body {
 				text-align: center;
@@ -35,7 +36,13 @@ $text = $lines[array_rand($lines)];
 			h3 {
 				color: lime;
 			}
-			cursor: url(hand.cur), pointer;
+			#knudes {
+				text-decoration: underline;
+			}
+			#knudes:hover {
+				background-color: black;
+				color: white;
+			}
 		</style>
 		<script>
 			var answer = window.prompt('Tapez "GENOU" pour continuer');
@@ -77,7 +84,7 @@ $text = $lines[array_rand($lines)];
 					src: ['sound/3.mp3']
 				})
 			];
-			document.getElementById('knudes').addEventListener('mouseover', function(event) {*
+			document.getElementById('knudes').addEventListener('mouseover', function(event) {
 				var index = Math.floor(Math.random() * Math.floor(2));
 				var sound = knudes[index];
 				sound.play();
