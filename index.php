@@ -58,17 +58,20 @@ $text = $lines[array_rand($lines)];
 		</a>
 
 		<p>
-			SEND <strong>KNUDES</strong> AND I SEND YOU <strong>KMINES<strong> :-*
+			SEND <span id="knudes"><strong>KNUDES</strong></span> AND I SEND YOU <strong>KMINES<strong> :-*
 		</p>
 		<p>
 			<a href="mailto:kneeporn@partouze-cagoule.fr">kneeporn@partouze-cagoule.fr</a>
 		</p>
 		<script>
-			document.addEventListener("DOMContentLoaded", function() {
+		document.addEventListener("DOMContentLoaded", function() {
 				var sound = new Howl({
-      				src: ['sound/1.mp3']
-    			});
-			});
+						src: ['sound/1.mp3', 'sound/2.mp3', 'sound/3.mp3']
+				});
+				document.addEventListener('mouseover', function(event) {
+						sound.play();
+				});
+		});
 		</script>
 	</body>
 </html>
