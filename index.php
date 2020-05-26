@@ -6,6 +6,7 @@ $text = $lines[array_rand($lines)];
 	<!-- C'est sans conteste le plus beau site que j'ai jamais programmé -->
 	<head>
 		<title>Knee Porn</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.core.min.js"></script>
 		<style>
 			@font-face {
 				font-family: "Trickster";
@@ -52,7 +53,6 @@ $text = $lines[array_rand($lines)];
 
 
 		<h3><?php echo $text ?></h3>
-
 		
 		<a href="manifesto.png">
 			<img src="gloireaugenou.gif" />
@@ -64,5 +64,12 @@ $text = $lines[array_rand($lines)];
 		<p>
 			<a href="mailto:kneeporn@partouze-cagoule.fr">kneeporn@partouze-cagoule.fr</a>
 		</p>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var sound = new Howl({
+      				src: ['sound.webm', 'sound.mp3']
+    			});
+			});
+		</script>
 	</body>
-</html>²
+</html>
