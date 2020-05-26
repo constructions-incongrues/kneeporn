@@ -51,10 +51,9 @@ $text = $lines[array_rand($lines)];
 			<h1>Welcome to my page</h1>
 		</a>
 
-
 		<h3><?php echo $text ?></h3>
 		
-		<a href="manifesto.png">
+		<a href="manifesto.png">	
 			<img src="gloireaugenou.gif" />
 		</a>
 
