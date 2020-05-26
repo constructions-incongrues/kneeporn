@@ -1,6 +1,8 @@
 <?php
 $lines = file(__DIR__.'/citations.txt');
 $text = $lines[array_rand($lines)];
+$sounds = glob(__DIR__.'/sound/*.mp3');
+$i = 0;
 ?>
 <html>
 	<!-- C'est sans conteste le plus beau site que j'ai jamais programmé -->
@@ -61,7 +63,7 @@ $text = $lines[array_rand($lines)];
 		<h3><?php echo $text ?></h3>
 
 		<h4>
-			SEND <span id="knudes"><strong>KNUDES</strong></span> AND I SEND YOU <strong>KMINES<strong> :-*
+			SEND <strong><a href="mailto:kneeporn@partouze-cagoule.fr" id="knudes">KNUDES</a></strong></span> AND I SEND YOU <strong>KMINES<strong> :-*
 		</h4>
 		
 		<a href="manifesto.png">	
@@ -74,18 +76,13 @@ $text = $lines[array_rand($lines)];
 		<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			var knudes = [
-				new Howl({
-					src: ['sound/1.mp3']
-				}),
-				new Howl({
-					src: ['sound/2.mp3']
-				}),
-				new Howl({
-					src: ['sound/3.mp3']
-				})
+<?php for ($i = 0; $i < $sounds; $i++): ?>
+				new Howl({src: [sprintf('sound/%d.mp3', $i)]}),
+<?php endforeach ?>
 			];
 			document.getElementById('knudes').addEventListener('mouseover', function(event) {
-				var index = Math.floor(Math.random() * Math.floor(2));
+				var index = Math.floor(Math.random() * Math.floor());
+				console.log(index);
 				var sound = knudes[index];
 				sound.play();
 			});
