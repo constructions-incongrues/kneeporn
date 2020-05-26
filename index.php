@@ -52,14 +52,15 @@ $text = $lines[array_rand($lines)];
 		</a>
 
 		<h3><?php echo $text ?></h3>
+
+		<h4>
+			SEND <span id="knudes"><strong>KNUDES</strong></span> AND I SEND YOU <strong>KMINES<strong> :-*
+		</h4>
 		
 		<a href="manifesto.png">	
 			<img src="gloireaugenou.gif" />
 		</a>
 
-		<p>
-			SEND <span id="knudes"><strong>KNUDES</strong></span> AND I SEND YOU <strong>KMINES<strong> :-*
-		</p>
 		<p>
 			<a href="mailto:kneeporn@partouze-cagoule.fr">kneeporn@partouze-cagoule.fr</a>
 		</p>
@@ -76,8 +77,9 @@ $text = $lines[array_rand($lines)];
 					src: ['sound/3.mp3']
 				})
 			];
-			document.getElementById('knudes').addEventListener('mouseover', function(event) {
-				var sound = knudes[Math.floor(Math.random() * Math.floor(2))];
+			document.getElementById('knudes').addEventListener('mouseover', function(event) {*
+				var index = Math.floor(Math.random() * Math.floor(2));
+				var sound = knudes[index];
 				sound.play();
 			});
 		});
