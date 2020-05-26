@@ -76,7 +76,7 @@ $i = 0;
 		<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			var knudes = [
-<?php for ($i = 0; $i < $sounds; $i++): ?>
+<?php for ($i = 0; $i < count($sounds); $i++): ?>
 				new Howl({src: [sprintf('sound/%d.mp3', $i)]}),
 <?php endfor ?>
 			];
