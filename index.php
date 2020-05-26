@@ -77,7 +77,7 @@ $i = 0;
 		document.addEventListener("DOMContentLoaded", function() {
 			var knudes = [
 <?php for ($i = 0; $i < count($sounds); $i++): ?>
-				new Howl({src: [sprintf('sound/%d.mp3', $i)]}),
+				new Howl({src: [<?php echo sprintf('sound/%d.mp3', $i) ?>]}),
 <?php endfor ?>
 			];
 			document.getElementById('knudes').addEventListener('mouseover', function(event) {
