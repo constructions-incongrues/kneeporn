@@ -38,8 +38,8 @@ $text = $lines[array_rand($lines)];
 		</style>
 		<script>
 			var answer = window.prompt('Tapez "GENOU" pour continuer');
-			if (answer == 'PROUT') {
-				alert('VOUS ÊTES INTOLÉRANTE AU LACTOSE');
+			if (answer.toLowerCase == 'prout') {
+				alert('VOUS ÊTES INTOLÉRANT⋅E AU LACTOSE, MISTER BOND 🍸');
 			}
 		</script>
 		<meta property="og:description" content="Pour une vengeance rétroactive de 4000 ans" />
