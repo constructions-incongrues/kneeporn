@@ -67,7 +67,7 @@ $text = $lines[array_rand($lines)];
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				var sound = new Howl({
-      				src: ['sound.webm', 'sound.mp3']
+      				src: ['sound/1.mp3']
     			});
 			});
 		</script>
