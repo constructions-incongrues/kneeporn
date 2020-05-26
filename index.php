@@ -78,9 +78,7 @@ $text = $lines[array_rand($lines)];
 			];
 			document.getElementById('knudes').addEventListener('mouseover', function(event) {
 				var sound = knudes[Math.floor(Math.random() * Math.floor(2))];
-				sound.once('load', function() {
-  					sound.play();
-				});
+				sound.play();
 			});
 		});
 		</script>
