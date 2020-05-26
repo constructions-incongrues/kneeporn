@@ -76,8 +76,8 @@ $text = $lines[array_rand($lines)];
 					src: ['sound/3.mp3']
 				})
 			];
-			document.addEventListener('mouseover', function(event) {
-				var sound = knudes[rand(0, 2)];
+			document.getElementById('knudes').addEventListener('mouseover', function(event) {
+				var sound = knudes[Math.floor(Math.random() * Math.floor(2))];
 				sound.once('load', function() {
   					sound.play();
 				});
