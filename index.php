@@ -65,12 +65,23 @@ $text = $lines[array_rand($lines)];
 		</p>
 		<script>
 		document.addEventListener("DOMContentLoaded", function() {
-				var sound = new Howl({
-						src: ['sound/1.mp3', 'sound/2.mp3', 'sound/3.mp3']
+			var knudes = [
+				new Howl({
+					src: ['sound/1.mp3']
+				}),
+				new Howl({
+					src: ['sound/2.mp3']
+				}),
+				new Howl({
+					src: ['sound/3.mp3']
+				})
+			];
+			document.addEventListener('mouseover', function(event) {
+				var sound = knudes[rand(0, 2)];
+				sound.once('load', function() {
+  					sound.play();
 				});
-				document.addEventListener('mouseover', function(event) {
-						sound.play();
-				});
+			});
 		});
 		</script>
 	</body>
