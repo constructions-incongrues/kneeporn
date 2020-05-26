@@ -78,7 +78,7 @@ $i = 0;
 			var knudes = [
 <?php for ($i = 0; $i < $sounds; $i++): ?>
 				new Howl({src: [sprintf('sound/%d.mp3', $i)]}),
-<?php endforeach ?>
+<?php endfor ?>
 			];
 			document.getElementById('knudes').addEventListener('mouseover', function(event) {
 				var index = Math.floor(Math.random() * Math.floor());
