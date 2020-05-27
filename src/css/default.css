@@ -1,0 +1,32 @@
+html {
+    background: url(../images/kneeporn.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Combat";
+    cursor: url(../images/unmessagesimple.cur), pointer;
+}
+
+body {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+@supports (-webkit-text-stroke: 2px black) {
+    h1 {
+        -webkit-text-stroke: 2px black;
+        -webkit-text-fill-color: red;
+    }
+    h1 a:hover {
+        -webkit-text-fill-color: blue;
+    }
+}
+
+.klinks h1 {
+    font-size: 1em;
+}
+
+a img:hover {
+    border: solid 10px blue;
+}
