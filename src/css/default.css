@@ -19,7 +19,7 @@ body {
         -webkit-text-fill-color: red;
     }
     h1 a:hover {
-        -webkit-text-fill-color: blue;
+        -webkit-text-fill-color: red;
     }
 }
 
