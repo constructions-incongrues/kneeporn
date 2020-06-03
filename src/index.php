@@ -22,7 +22,7 @@ $i = 0;
 	</head>
 
 	<body>
-		<h1>The Knee Porn Ma-Knee-Fest-O</h1>
+		<h1>Welcome to my papage</h1>
 		<h2>“<?php echo trim($text) ?>”</h2>
 
 		<h4>
