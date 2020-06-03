@@ -16,13 +16,13 @@ $i = 0;
 		<script>
 			var answer = window.prompt('Tapez "GENOU" pour continuer');
 			if (answer.toLowerCase() == 'prout') {
-				alert('VOUS ÊTES INTOLÉRANT⋅E AU LACTOSE, MISTER BOND 🍸');
+				alert('VOUS ÊTES INTOLÉRANT⋅E AU LACTOSE, MISSTER BOND 🍸');
 			}
 		</script>
 	</head>
 
 	<body>
-		<h1>Welcome to my papage</h1>
+		<h1>WELCOME TO MY PAGE IS UR PAGE</h1>
 		<h2>“<?php echo trim($text) ?>”</h2>
 
 		<h4>
