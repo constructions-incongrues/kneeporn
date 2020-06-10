@@ -1,11 +1,11 @@
 html {
-    background: url(../images/kneeporn.png) no-repeat center center fixed; 
+    background: url(../images/ui/kneeporn.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: "Combat";
-    cursor: url(../images/unmessagesimple.cur), pointer;
+    cursor: url(../images/ui/unmessagesimple.cur), pointer;
 }
 
 body {

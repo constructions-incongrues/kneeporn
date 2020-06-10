@@ -26,8 +26,8 @@ $i = 0;
 		<h2>“<?php echo trim($text) ?>”</h2>
 
 		<h4>
-			<a href="images/manifesto.png">	
-				<img src="images/gloireaugenou.gif" />
+			<a href="images/ui/manifesto.png">	
+				<img src="images/ui/gloireaugenou.gif" />
 			</a>
 		</h4>
 
